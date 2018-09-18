@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
-import { HomePage } from '../home/home';
+import { ForecastPage } from '../forecast/forecast';
+import { UVIndexPage } from '../uv-index/uv-index';
+import { CurrentWeatherPage } from '../current-weather/current-weather';
 
 @Component({
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab1Root = CurrentWeatherPage;
+  tab2Root = ForecastPage;
+  tab3Root = UVIndexPage;
 
   constructor() {
 
