@@ -1,3 +1,15 @@
-page-home {
-
-}
+page-current-weather {
+    .city {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    .primary-value {
+      margin-top: 18px;
+    }
+  
+    kws-condition {
+      --kws-condition-image-height: 212px;
+      --kws-condition-label-font-size: 24px;
+    }
+  }
