@@ -9,6 +9,7 @@ import { Weather } from '../../models/weather';
   templateUrl: 'current-weather.html'
 })
 export class CurrentWeatherPage {
+
   currentWeather: Weather = {
     temperature: 302,
     condition: 200

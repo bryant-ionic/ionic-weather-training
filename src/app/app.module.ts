@@ -14,6 +14,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IconMapProvider } from '../providers/icon-map/icon-map';
+import { WeatherProvider } from '../providers/weather/weather';
 
 @NgModule({
   declarations: [
@@ -38,8 +39,9 @@ import { IconMapProvider } from '../providers/icon-map/icon-map';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    IconMapProvider
+    IconMapProvider,
+    WeatherProvider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
